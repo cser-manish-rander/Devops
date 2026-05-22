@@ -106,7 +106,7 @@ public class App extends JPanel implements ActionListener, KeyListener {
         g.setColor(Color.black);
         g.setFont(new Font("Arial", Font.BOLD, 30));
 
-        g.drawString("Score: " + score, 20, 40);
+        g.drawString("Score: " + score, 20, 4);
 
         // Game Over
         if (gameOver) {
