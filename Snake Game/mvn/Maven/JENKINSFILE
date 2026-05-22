@@ -15,11 +15,9 @@ pipeline {
             }
         }
 
-        stage('Run') {
+        stage('Success') {
             steps {
-                dir('Snake Game/mvn/Maven') {
-                    bat 'java -jar target\\Maven1-1.0-SNAPSHOT.jar'
-                }
+                echo 'Snake Game build successful'
             }
         }
     }
