@@ -170,7 +170,7 @@ public class App extends JPanel implements ActionListener, KeyListener {
 
     public void restartGame() {
 
-        birdY = 300;
+        birdY = 298;
 
         velocityY = 0;
 
