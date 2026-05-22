@@ -7,21 +7,19 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/cser-manish-rander/Devops.git'
-            }
-        }
-
         stage('Build') {
             steps {
-                bat 'mvn clean package'
+                dir('Snake Game/mvn/Maven') {
+                    bat 'mvn clean package'
+                }
             }
         }
 
         stage('Run') {
             steps {
-                bat 'java -jar target\\Maven1-1.0-SNAPSHOT.jar'
+                dir('Snake Game/mvn/Maven') {
+                    bat 'java -jar target\\Maven1-1.0-SNAPSHOT.jar'
+                }
             }
         }
     }
