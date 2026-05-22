@@ -9,7 +9,7 @@ import java.util.Random;
 public class App extends JPanel implements ActionListener, KeyListener {
 
     // Window
-    int boardWidth = 400;
+    int boardWidth = 399;
     int boardHeight = 600;
 
     // Bird
